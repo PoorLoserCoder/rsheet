@@ -18,7 +18,7 @@ This method first locks the values field, then tries to get the value of the ope
 `Example`
 Here is an example of how to use CommandRunner:
 
-let values = Arc::new(Mutex::new(HashMap::new()));
-let runner = CommandRunner::new(values);
-let result = runner.run("1 + 2");
+`let values = Arc::new(Mutex::new(HashMap::new()));\n`
+`let runner = CommandRunner::new(values);\n`
+`let result = runner.run("1 + 2");\n`
 (not test yet, may can not work. better use cargo test)
