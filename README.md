@@ -1,7 +1,7 @@
 CommandRunner Struct
 The CommandRunner is a Rust struct used for executing and handling expressions. It contains a values field, which is a thread-safe hash map for storing variable names (strings) and their values (CellValue).
 
-`Methods\t`
+Methods
 `new`
 new is an associated function used to create a new instance of CommandRunner. It takes an Arc<Mutex<HashMap<String, CellValue>>> as an argument, which is a thread-safe hash map for storing variable names and their values.
 
@@ -23,7 +23,7 @@ Here is an example of how to use CommandRunner:
 `let result = runner.run("1 + 2");\n`
 (not test yet, may can not work. better use cargo test)
 
-`For test examples\t`
+For test examples
 The provided Rust code defines a struct CommandRunner and its associated methods. The CommandRunner struct is used to evaluate mathematical expressions. It contains a field values which is a thread-safe hash map storing variable names and their corresponding values.
 
 Here's a detailed explanation of the methods:
